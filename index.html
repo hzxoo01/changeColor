@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"><title></title>
+		<style>
+			a{text-decoration: none;color: #000;}
+			a:hover{color: #fff;}
+		</style>
+	</head>
+	<body bgcolor="#E6D2D5">
+		中国传统颜色: 
+		<br/><a href="#">蓟粉红 </a>
+		<br/><a href="#">锌灰</a>
+		<br/><a href="#">海棠红</a>
+		
+		<script>
+			let aObj = document.getElementsByTagName('a');			
+			let cArrar=['#E6D2D5','#7A7374','#F03752']
+			
+			for(let i=0;i<aObj.length;i++){
+				aObj[i].onclick = function() {					
+						document.body.style.backgroundColor = cArrar[i];					
+				}
+			}			
+		</script>
+	</body>
+</html>
